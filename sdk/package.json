@@ -1,24 +1,60 @@
 {
-  "name": "sdk",
+  "name": "advance-monitor-sdk",
   "version": "1.0.0",
-  "description": "",
+  "description": "企业级前端监控 SDK",
   "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
   "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.esm.js",
+      "require": "./dist/index.js"
+    },
+    "./plugins": {
+      "import": "./src/plugins/index.js"
+    },
+    "./node": {
+      "require": "./src/node/tracing.js"
+    }
+  },
+  "bin": {
+    "advance-monitor-upload": "./src/cli/upload-sourcemap.js"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "build:lib": "vite build --config vite.lib.config.js --watch"
+    "build:lib": "vite build --config vite.lib.config.js"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
+  "keywords": [
+    "monitor",
+    "apm",
+    "error-tracking",
+    "performance",
+    "web-vitals",
+    "sourcemap"
+  ],
   "devDependencies": {
     "terser": "^5.43.0",
     "vite": "^5.0.0"
   },
   "dependencies": {
-    "performance-now": "^2.1.0",
+    "web-vitals": "^4.2.0"
+  },
+  "optionalDependencies": {
     "source-map": "^0.7.4",
-    "web-vitals": "^5.0.3"
+    "ua-parser-js": "^1.0.37",
+    "@aspect-build/rules_js": "^2.0.0"
+  },
+  "peerDependencies": {
+    "rrweb": "^2.0.0-alpha.0"
+  },
+  "peerDependenciesMeta": {
+    "rrweb": {
+      "optional": true
+    }
   }
 }

@@ -1,0 +1,150 @@
+// ============================================
+// Design Tokens - 设计变量系统
+// ============================================
+
+// --------------------------------------------
+// 颜色系统
+// --------------------------------------------
+
+// 品牌色
+$color-primary: #165DFF;
+$color-primary-light: #4080FF;
+$color-primary-dark: #0E42D2;
+$color-primary-bg: #E8F3FF;
+
+// 功能色
+$color-success: #00B42A;
+$color-success-bg: #E8FFEA;
+$color-warning: #FF7D00;
+$color-warning-bg: #FFF7E8;
+$color-error: #F53F3F;
+$color-error-bg: #FFECE8;
+$color-info: #165DFF;
+$color-info-bg: #E8F3FF;
+
+// 中性色
+$color-text-primary: #1D2129;
+$color-text-secondary: #4E5969;
+$color-text-tertiary: #86909C;
+$color-text-quaternary: #C9CDD4;
+$color-text-disabled: #C9CDD4;
+
+// 背景色
+$color-bg-page: #F5F7FA;
+$color-bg-container: #FFFFFF;
+$color-bg-hover: #F2F3F5;
+$color-bg-active: #E8F3FF;
+$color-bg-disabled: #F7F8FA;
+
+// 边框色
+$color-border: #E5E6EB;
+$color-border-light: #F2F3F5;
+$color-border-dark: #C9CDD4;
+
+// 阴影
+$shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.04);
+$shadow-md: 0 4px 10px rgba(0, 0, 0, 0.06);
+$shadow-lg: 0 8px 20px rgba(0, 0, 0, 0.08);
+
+// --------------------------------------------
+// 字体系统
+// --------------------------------------------
+
+$font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+$font-family-mono: 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Code', monospace;
+
+// 字号
+$font-size-xs: 12px;
+$font-size-sm: 13px;
+$font-size-base: 14px;
+$font-size-md: 16px;
+$font-size-lg: 18px;
+$font-size-xl: 20px;
+$font-size-2xl: 24px;
+$font-size-3xl: 28px;
+$font-size-4xl: 32px;
+
+// 行高
+$line-height-tight: 1.25;
+$line-height-normal: 1.5;
+$line-height-relaxed: 1.75;
+
+// 字重
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+// --------------------------------------------
+// 间距系统
+// --------------------------------------------
+
+$spacing-xs: 4px;
+$spacing-sm: 8px;
+$spacing-md: 12px;
+$spacing-base: 16px;
+$spacing-lg: 20px;
+$spacing-xl: 24px;
+$spacing-2xl: 32px;
+$spacing-3xl: 40px;
+$spacing-4xl: 48px;
+
+// --------------------------------------------
+// 圆角系统
+// --------------------------------------------
+
+$radius-sm: 4px;
+$radius-base: 6px;
+$radius-md: 8px;
+$radius-lg: 12px;
+$radius-xl: 16px;
+$radius-full: 9999px;
+
+// --------------------------------------------
+// 动画系统
+// --------------------------------------------
+
+$transition-fast: 0.15s ease;
+$transition-base: 0.2s ease;
+$transition-slow: 0.3s ease;
+
+// --------------------------------------------
+// 布局系统
+// --------------------------------------------
+
+$sidebar-width: 240px;
+$sidebar-collapsed-width: 64px;
+$header-height: 56px;
+$content-max-width: 1400px;
+
+// --------------------------------------------
+// 层级系统
+// --------------------------------------------
+
+$z-index-dropdown: 1000;
+$z-index-sticky: 1020;
+$z-index-fixed: 1030;
+$z-index-modal-backdrop: 1040;
+$z-index-modal: 1050;
+$z-index-popover: 1060;
+$z-index-tooltip: 1070;
+
+// --------------------------------------------
+// 断点系统
+// --------------------------------------------
+
+$breakpoint-sm: 640px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;
+$breakpoint-xl: 1280px;
+$breakpoint-2xl: 1536px;
+
+// --------------------------------------------
+// 错误级别颜色
+// --------------------------------------------
+
+$level-debug: #86909C;
+$level-info: #165DFF;
+$level-warning: #FF7D00;
+$level-error: #F53F3F;
+$level-critical: #CB2634;
